@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mortgage</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/css/main.css">
+    <!-- endbuild -->
+    
+    
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <div class="title container">
+      <h1 class="border-solid">Mortgage Calculator</h1>
+    </div>
+    <div id="calculator" class="container">
+      <div class="subtitle">
+        <h2 class="border-solid">Change values to calculate your results</h2>
+      </div>
+      <div class="field">
+        <label for="yearsOfMortgage">Years of mortgage</label>
+        <div id="yearsOfMortgageSlider" class="round-slider"></div>
+        <input type="number" name="yearsOfMortgage">
+      </div>
+      <div class="field">
+        <label for="rateOfInterest">Rate of interest</label>
+        <input type="text" name="interestRate">
+      </div>
+      <div class="field">
+        <label for="loanAmount">Loan Amount</label>
+        <input type="text" name="loanAmount">
+      </div>
+      <div class="field">
+        <label for="annualTax">Annual Tax</label>
+        <input type="text" name="annualTax">
+      </div>
+      <div class="field">
+        <label for="annualInsurance">Annual insurance</label>
+        <input type="text" name="annualInsurance">
+      </div>
+      <div class="calculate">
+        <button id="calculate-btn" class="calculate-btn">Calculate</button>
+      </div>
+    </div>
+    <div id="results" class="container">
+      <div class="result">
+        <div class="name">Principle and interest</div>
+        <div id="principleAndInterest" class="value"></div>
+      </div>
+      <div class="result">
+        <div class="name">Tax</div>
+        <div id="tax" class="value"></div>
+      </div>
+      <div class="result">
+        <div class="name">Insurance</div>
+        <div id="insurance" class="value"></div>
+      </div>
+      <div class="result">
+        <div class="name">Total Monthly Payment</div>
+        <div id="monthlyPayment" class="value"></div>
+      </div>
+    </div>
+    
+    
+    <!-- build:js scripts/vendor.js -->	
+    
+    
+    <!-- endbuild -->	
+    <!-- build:js scripts/main.js -->
+    <script src="dist/bundle.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
